@@ -5,7 +5,7 @@ excerpt: 'This guide explains how to configure IPv6 addresses on our infrastruct
 section: 'Network Management'
 ---
 
-**Last updated 21st February 2019**
+**Last updated 22nd February 2019**
 
 ## Objective
 
@@ -15,8 +15,8 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 
 ## Requirements
 
-- a [Dedicated Server](https://www.ovh.com/sg/dedicated-servers/){.external}
-- [IP failover(s)](https://www.ovh.com/sg/dedicated-servers/ip_failover.xml){.external} with associated virtual MAC addresses
+- a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}
+- [IP failover(s)](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external} with associated virtual MAC addresses
 - all your IPv6 information (prefix, gateway etc.)
 - a basic knowledge of [SSH](http://en.wikipedia.org/wiki/Secure_Shell) and networking
 
@@ -97,7 +97,7 @@ ping6 -c 4 2001:4860:4860::8888
 ```
 
 
-If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/sg/en/dedicated/ovh-rescue/){.external}.
+If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external}.
 
 ### Fedora 26 and above
 
@@ -151,7 +151,7 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/sg/en/dedicated/ovh-rescue/){.external}.
+If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external}.
 
 ### FreeBSD
 
@@ -197,7 +197,7 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/sg/en/dedicated/ovh-rescue/){.external}.
+If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external}.
 
 ### Ubuntu 18.04
 

@@ -18,8 +18,8 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 ## Requirements
 
 * a Dedicated Server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
-* at least one [failover IP](https://www.ovh.com/sg/dedicated-servers/ip_failover.xml) address attached to the server
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* at least one [failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml) address attached to the server
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
@@ -31,7 +31,7 @@ For this example, we will use the following values in our code samples, which sh
 
 ### Assign a virtual MAC address
 
-Log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
+Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
 
 ![Failover IP](images/virtual_mac_01.png){.thumbnail}
 
@@ -112,9 +112,9 @@ Save and close the file, then reboot your virtual machine.
 #### CentOS 7
 
 > [!primary]
-> 
+> 
 > For CentOS 7, the name of the network adapter will vary, depending on the installation options. You will need to verify the adapter name and use it to configure your virtual machine. Use the command `ipaddr`{.action} to find your interface name.
-> 
+> 
 
 Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/sysconfig/network-scripts/ifcfg-(interface name)`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
@@ -306,9 +306,9 @@ Select the adapter with the server’s IP, then check `Allow management operatin
 ![networkbridging](images/network-bridging-windows-2012-1.jpg){.thumbnail}
 
 > [!primary]
-> 
+> 
 >This step is only required once for a hyper-v server. For all VMs, a virtual switch is required to connect the VM’s virtual network adapters to the server’s physical adapter.
-> 
+> 
 
 Next, select the VM that you wish to add the failover IP to. Use the Hyper-V Manager to change the settings of the VM and shut it down.
 

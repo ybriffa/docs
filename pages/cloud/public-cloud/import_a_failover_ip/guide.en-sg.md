@@ -3,10 +3,10 @@ title: 'Import a failover IP'
 slug: import_a_failover_ip
 excerpt: 'This guide explains how to import a failover IP into your OVH Public Cloud project.'
 legacy_guide_number: g1883
-section: Networking
+section: Knowledge Base
 ---
 
-**Last updated 18th December 2018**
+**Last updated 19th December 2018**
 
 ## Objective
 
@@ -22,12 +22,12 @@ If you need to configure a failover IP address on your instances because:
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
-* a [failover IP address](https://www.ovh.com/sg/dedicated-servers/ip_failover.xml){.external} assigned to an [OVH Dedicated Server](https://www.ovh.com/sg/dedicated-servers/){.external}.
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a [failover IP address](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external} assigned to an [OVH Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}.
 
 ## Instructions
 
-Firstly, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
+Firstly, log in to the [OVH Control Ppanel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
 
 When you've found your project in the list, click it and then select the `Infrastructure`{.action} tab.
 

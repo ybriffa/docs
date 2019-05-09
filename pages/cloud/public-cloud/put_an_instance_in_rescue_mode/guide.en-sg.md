@@ -3,7 +3,7 @@ title: 'Put an instance in rescue mode'
 slug: put_an_instance_in_rescue_mode
 excerpt: 'This guide will show you how to put your instance in rescue mode'
 legacy_guide_number: g2029
-section: Troubleshooting
+section: Knowledge Base
 ---
 
 **Last updated 13th March 2019**
@@ -18,15 +18,15 @@ In such circumstances, you can use rescue mode to reconfigure your instance or r
 
 ## Requirements
 
-* a [Public Cloud Instance](https://www.ovh.com/sg/public-cloud/instances/){.external} set up in your OVH account
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external} set up in your OVH account
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 * administrative (root) access to the instance via SSH
 
 ## Instructions
 
 ### Activate rescue mode
 
-First, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu.
+First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu.
 
 ![control panel](images/rescue-mode-01.png){.thumbnail}
 

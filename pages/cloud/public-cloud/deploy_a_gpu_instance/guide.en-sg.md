@@ -2,7 +2,7 @@
 title: 'Deploying a GPU instance'
 slug: deploying-a-gpu-instance
 excerpt: 'Find out how to deploy a GPU instance on Linux or Windows'
-section: 'From the OVH Control Panel'
+section: Knowledge Base
 ---
 
 **Last updated 30th October 2018**
@@ -39,7 +39,7 @@ All the images we offer can be used on a GPU instance.
 > If you don’t feel comfortable with manually compiling a kernel module, we recommend using a distribution that is officially supported by Nvidia and for which they provide *turnkey* drivers: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Once you are logged in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, in your Public Cloud project, click on `Add server`{.action}and choose a GPU instance:
+Once you are logged in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in your Public Cloud project, click on `Add server`{.action}and choose a GPU instance:
 
 ![public-cloud](images/EN-Flavors.png){.thumbnail}
 

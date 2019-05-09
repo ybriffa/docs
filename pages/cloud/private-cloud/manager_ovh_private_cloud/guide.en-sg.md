@@ -5,7 +5,7 @@ excerpt: Find out what you can do in your Private Cloud Control Panel
 section: Getting started
 ---
 
-**Last updated 01/02/2018**
+**Last updated 04th January 2018**
 
 ## Objective
 
@@ -15,15 +15,15 @@ In your OVH Control Panel, you can choose from many Private Cloud settings optio
 
 ## Requirements
 
-- You must be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Go to the `Dedicated`{.action} section, then select `Private Cloud`{.action}.
-- You must have a [Private Cloud](https://www.ovh.com/sg/private-cloud/){.external} product.
+- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Go to the `Dedicated`{.action} section, then select `Private Cloud`{.action}.
+- You must have a [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} product.
 
 
 ## Instructions
 
 ### General tab
 
-Once you have clicked `Dedicated`{.action}, and opened the `Private Cloud`{.action} section of your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, you will see a general overview of your Private Cloud:
+Once you have clicked `Dedicated`{.action}, and opened the `Private Cloud`{.action} section of your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, you will see a general overview of your Private Cloud:
 
 ![General information](images/manager_general.png){.thumbnail}
 
@@ -112,7 +112,7 @@ We can look at the modification of permissions per datacentre in more detail:
 
 ![User permissions per datacentre](images/rights_user_datacenters.png){.thumbnail}
 
-- `vSphere access`{.action} – this deals with the vSphere user’s overall permissions:
+- `vSphere access`{.action} – this deals with the ﻿﻿﻿vSphere user’s overall permissions:
 
 |Permissions|Description|
 |---|---|
@@ -234,7 +234,7 @@ The `Windows Licence`{.action} tab allows you to activate Windows SPLA licences 
 
 ![Windows SPLA Licence](images/windows_licence.png){.thumbnail}
 
-You can find the pricing page [here](https://www.ovh.com/sg/private-cloud/options/images-licences.xml){.external}.
+You can find the pricing page [here](https://www.ovh.co.uk/private-cloud/options/images-licences.xml){.external}.
 
 
 ## Go further

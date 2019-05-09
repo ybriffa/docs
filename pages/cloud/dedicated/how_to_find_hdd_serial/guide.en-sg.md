@@ -5,7 +5,7 @@ excerpt: This guide will show you how to retrieve the serial number of a disk in
 section: Server Management
 ---
 
-**Last update 21th August 2018**
+**Last update 21st August 2018**
 
 ## Objective
 
@@ -15,7 +15,7 @@ To minimise the chance of human error during hard disk replacements, we ask our 
 
 ## Requirements
 
-- a [dedicated server](https://www.ovh.com/sg/dedicated-servers/){.external}
+- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
 - administrative (root) access to the server via SSH
 - the sas2ircu utility installed on your Windows server (available via the [broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external} search engine).
 
@@ -72,7 +72,7 @@ The device will be detected by the OS, and displayed as follows: /dev/sda, /dev/
 
 ### Retrieve a disk's serial number (Hardware RAID)
 
-For an in-depth look of these commands and how to test your hard disks, refer to [this guide (LSI raid controller)](https://docs.ovh.com/au/en/dedicated/raid-hard/){.external}.
+For an in-depth look of these commands and how to test your hard disks, refer to [this guide (LSI raid controller)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}.
 
 
 #### MegaRaid Controller
@@ -162,7 +162,7 @@ The RAID Device ID will be displayed as follows: /dev/sda = 1st RAID, /dev/sdb =
 
 LSI RAID controller uses a module called sg-map which maps devices in /dev/sgX (**X** being the number defining the device).
 
-You can refer to [this guide (LSI raid controller)](https://docs.ovh.com/au/en/dedicated/raid-hard/){.external} to find which hard drive relates to a designated sg device.
+You can refer to [this guide (LSI raid controller)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} to find which hard drive relates to a designated sg device.
 
 Once you have found the sg device related to the hard disk you want to query, use the following command:
 

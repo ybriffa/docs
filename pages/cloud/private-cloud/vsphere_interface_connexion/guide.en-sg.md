@@ -5,7 +5,7 @@ excerpt: Learn about the different ways you can log in to vSphere
 section: Getting started
 ---
 
-**Last updated 01/02/2018**
+**Last updated 1st February 2018**
 
 ## Objective
 

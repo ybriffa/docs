@@ -5,7 +5,7 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 31/01/2018**
+**Last updated 2nd April, 2019**
 
 ## Objective
 
@@ -16,7 +16,7 @@ When you order your VPS, a distribution or operating system is pre-installed, bu
  
 > [!warning]
 >
-> While OVH provides you with the devices, the responsibility rests solely in your hands. Since we have no access to these machines, we are not their administrators. It is your responsibility to manage the software, and apply proper security measures on a daily basis. This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a specialised service provider if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
+> OVH is providing you with machines that you will be responsible for. We have no access to these machines, and therefore cannot manage them. You are responsible for your own software and security management. This guide is designed to assist you in common tasks as much as possible. However, we recommend that you call upon a specialised service provider if you experience any issues or doubts when it comes to managing, using or securing your server.
 > 
 
 
@@ -27,7 +27,7 @@ When you order your VPS, a distribution or operating system is pre-installed, bu
 
 ## Instructions
 
-We will offer you a number of practical tips. Please note that this is a general guide. Some commands need to be adapted to the distribution or operating system you are using. Some tips will advise you to use third-party tools. Please refer to the official documentation for these third-party tools, for any help you might need.
+Please note that this is a general guide. Some commands need to be adapted to the distribution or operating system you are using. Some tips will advise you to use third-party tools. Please refer to the official documentation for these third-party tools, for any help you might need.
 
 ### Update your system
 
@@ -182,7 +182,7 @@ For any additional queries and information concerning Fail2Ban, please refer to 
 
 ### Configure the internal firewall: iptables
 
-The bare-metal distribution comes with a firewall service named iptables. By default, this service does not have any active rules. You can verify this by typing the following command:
+Linux and UNIX distributions come with a firewall service named iptables. By default, this service does not have any active rules. You can verify this by typing the following command:
 
 ```sh
 iptables -L
@@ -194,7 +194,7 @@ It is recommended that you create and adjust rules on this firewall, to fit your
 
 OVH solutions include a firewall at the entrance to the infrastructure, called the Firewall Network. Its implementation and configuration allow protocols to be blocked before they even arrive on your server.
 
-We also have a guide on [configuring this firewall network](https://docs.ovh.com/sg/en/dedicated/firewall-network/){.external}.
+We also have a guide on [configuring this firewall network](https://docs.ovh.com/gb/en/dedicated/firewall-network/){.external}.
 
 ### Backing up your system and your data
 
@@ -206,10 +206,10 @@ Securing your data is a key element, which is why OVH offers you three backup op
 - The `Automated Backup` option allows you to make a regular backup of your VPS (excluding additional disks) on a daily basis, exported and replicated three times before being available from your Control Panel (available only on Cloud VPS and Cloud RAM VPS);
 - The `Backup Storage` option that allows you to manually deposit and recover files on a dedicated disk space. The available file transfer protocols are FTP, NFS and CIFS, to ensure compatibility with the file access methods of all operating systems and distributions used. This allows you to keep your data safe in case of service interruption (only available on Cloud VPS and Cloud RAM VPS).
 
-You will find all information on our VPS backup solutions here: <https://www.ovh.com/sg/vps/backup-vps.xml>.
+You will find all information on our VPS backup solutions here: <https://www.ovh.co.uk/vps/backup-vps.xml>.
 
 ## Go further
 
-[Firewall Network Guide](https://docs.ovh.com/sg/en/dedicated/firewall-network/){.external}
+[Firewall Network Guide](https://docs.ovh.com/gb/en/dedicated/firewall-network/){.external}
 
 Join our user community on <https://community.ovh.com/en/>.

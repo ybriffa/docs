@@ -1,5 +1,5 @@
 ---
-title: 'Using the IPMI with dedicated servers'
+title: 'Using the IPMI with Dedicated Servers'
 slug: use-ipmi-dedicated-servers
 excerpt: 'With the IPMI, you can log in to your server without having to use any external software.'
 section: 'Getting started'
@@ -15,12 +15,16 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 
 ## Requirements
 
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 
 ## Instructions
 
 You can access the IPMI using two different methods: the Java applet (recommended) or the browser (Serial over LAN).
+
+__Java applet__: Allows you to use a KVM (keyboard, video, mouse) tool through a Java console to perform the actions you want, with both options: keyboard and mouse.
+
+__SoL (Serial over LAN)__: Allows you to have remote access to the sever console through a web browser.
 
 ### Access via the Java applet.
 
@@ -62,6 +66,11 @@ If everything appears to be normal, as per our example, you may be experiencing 
 ![IPMI test](images/ipmi_reboot.png){.thumbnail}
 
 It will take several minutes for the IPMI to reboot.
+
+> [!Primary]
+>
+> It will not impact to the server functioning.
+>
 
 ## Go further
 

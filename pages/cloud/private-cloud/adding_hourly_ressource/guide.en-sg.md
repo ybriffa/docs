@@ -10,14 +10,14 @@ section: 'OVH Features'
 
 ## Objective
 
-With our [Private Cloud solutions](https://www.ovh.com/sg/private-cloud/){.external}, you can add resources that are billed per hour of usage.
+With our [Private Cloud solutions](https://www.ovh.co.uk/private-cloud/){.external}, you can add resources that are billed per hour of usage.
 
 **This guide will show you how to add hourly resources via the Private Cloud vSphere interface.**
 
 ## Requirements
 
-- a [Private Cloud](https://www.ovh.com/sg/private-cloud/){.external} solution
-- [the "Add resources"](https://docs.ovh.com/fr/private-cloud/changer-les-droits-d-un-utilisateur/){.external} (French guide, English pending) right for the datacentre concerned (this right is granted via the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external})
+- a [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
+- [the "Add resources"](https://docs.ovh.com/fr/private-cloud/changer-les-droits-d-un-utilisateur/){.external} (French guide, English pending) right for the datacentre concerned (this right is granted via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external})
 - access to the vSphere client
 
 
@@ -47,6 +47,7 @@ Once you have confirmed your order, you can track progress as the resource is be
 ![](images/addhost_06.png){.thumbnail}
 
 A task will also appear in the 'recent tasks' list on your vSphere interface. You can also use this task to track the resource addition.
+
 
 
 ## Go further

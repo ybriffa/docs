@@ -3,21 +3,21 @@ title: 'Create an instance in your OVH customer account'
 slug: create_an_instance_in_your_ovh_customer_account
 excerpt: 'This guide will show you how to create an instance in your Public Cloud account.'
 legacy_guide_number: g1775
-section: 'Getting started'
+section: Quick start
 ---
 
 **Last updated 21st September 2018**
 
 ## Objective
 
-The [Public Cloud](https://www.ovh.com/sg/public-cloud/instances/){.external} lets you create instances (i.e. virtual servers) quickly and easily, in just a few clicks.
+The [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} lets you create instances (i.e. virtual servers) quickly and easily, in just a few clicks.
 
 **This guide will show you how to create an instance in your Public Cloud account.**
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
-* a [Public Cloud](https://www.ovh.com/sg/public-cloud/instances/){.external} project created in your OVH account
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} project created in your OVH account
 * an SSH key created in your OVH customer account
 
 ## Intructions
@@ -31,7 +31,7 @@ The rest of this guide assumes that you have set the view of your cloud project 
 
 ### Add an instance
 
-First, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `Cloud`{.action} menu.
+First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Cloud`{.action} menu.
 
 ![cloud menu](images/pci-instance-cloud-01.png){.thumbnail}
 
@@ -95,5 +95,7 @@ When you create an instance and choose to pay monthly, you must keep this instan
 >
 
 ## Go further
+
+[Getting started with Public Cloud](https://docs.ovh.com/gb/en/public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

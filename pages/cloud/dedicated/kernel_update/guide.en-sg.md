@@ -5,17 +5,21 @@ excerpt: 'Find out how to update the kernel for distributions that use an OVH co
 section: 'Advanced use'
 ---
 
-**Last updated 07/08/2018**
+**Last updated 03rd August 2018**
 
 ## Objective
 
-[OVH Dedicated Servers](https://www.ovh.com/sg/dedicated-servers/){.external} are easily able to boot into a Linux operating system using an updated kernel with the netboot startup system. However, it's best practice to update the kernel on the local machine.
+[OVH Dedicated Servers](https://www.ovh.co.uk/dedicated_servers/){.external} are easily able to boot into a Linux operating system using an updated kernel with the netboot startup system. However, it's best practice to update the kernel on the local machine.
+
+## What is a Kernel?
+
+A Kernel is a low-level system that's responsible for interfacing the Operating System and Applications with the physical hardware of the server. The kernel also allows used for sharing processes. 
 
 **This guide will show you how to update the kernel for distributions that use an OVH core.**
 
 > [!warning]
 >
-> By default, all system snapshots offered on [OVH Dedicated Servers](https://www.ovh.com/sg/dedicated-servers/){.external} use an optimised OVH core. If you have replaced these snapshots with your own distribution, please refer to your distribution’s official documentation.
+> By default, all system snapshots offered on [OVH Dedicated Servers](https://www.ovh.co.uk/dedicated_servers/){.external} use an optimised OVH core. If you have replaced these snapshots with your own distribution, please refer to your distribution’s official documentation.
 >
 
 > [!primary]
@@ -27,11 +31,16 @@ section: 'Advanced use'
 
 ## Requirements
 
-- an [OVH Dedicated Server](https://www.ovh.com/sg/dedicated-servers/){.external}
+- an [OVH Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}
 - root access to the server via SSH
 - a backup of your data (see the official documentation for your distribution)
 
 ## Instructions
+
+> [!warning]
+>
+> Please note that Ubuntu installation templates do not come with OVH kernels any more due to copyright issues. You must add the OVH repositories to the /etc/apt/sources.list file.
+>
 
 ### Identify the kernel
 
@@ -135,7 +144,7 @@ reboot
 
 ### Rollback
 
-In the event that you make a mistake or receive an error, it's possible to rollback your changes. To do so, the server must be placed in [Rescue mode](https://docs.ovh.com/sg/en/dedicated/ovh-rescue/){.external}. This will require you to mount your system using the following commands:
+In the event that you make a mistake or receive an error, it's possible to rollback your changes. To do so, the server must be placed in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}. This will require you to mount your system using the following commands:
 
 ```sh
 mount /dev/md1 /mnt
@@ -201,7 +210,7 @@ uname -r
 
 ## Go further
 
-[Rescue Mode](https://docs.ovh.com/sg/en/dedicated/ovh-rescue/){.external}.
+[Rescue Mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
 
 [Information on Meltdown and Spectre  vulnerabilities](https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/){.external}.
 

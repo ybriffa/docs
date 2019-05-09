@@ -17,7 +17,7 @@ In certain cases — like replacing a datastore or scaling it up to a higher cap
 
 ## Requirements
 
-* an [OVH Private Cloud](https://www.ovh.com/sg/private-cloud/){.external} solution
+* an [OVH Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
 * access to the vSphere management interface
 
 

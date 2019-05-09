@@ -7,23 +7,23 @@ section: 'Getting started'
 hidden: true
 ---
 
-**Last updated 15th October 2018**
+**Last updated 11th October 2018**
 
 ## Objective
 
-[Public Cloud instances](https://www.ovh.com/sg/public-cloud/instances/){.external} offer a flexible, pay-as-you-go solution for managing virtual resources. This means that you can add and remove resources (instances, storage, etc) as and when you need to.
+[Public Cloud instances](https://www.ovh.co.uk/public-cloud/instances/){.external} offer a flexible, pay-as-you-go solution for managing virtual resources. This means that you can add and remove resources (instances, storage, etc) as and when you need to.
 
 **This guide will show you how to create your first Public Cloud project.**
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 ### Create a project
 
-Log into to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Once you're logged in, click on the `Cloud`{.action} menu.
+Log into to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Once you're logged in, click on the `Cloud`{.action} menu.
 
 ![cloud menu](images/menu.png){.thumbnail}
 
@@ -66,7 +66,7 @@ Once you've clicked the `Add`{.action} button, you'll be prompted to complete th
 
 #### Buy cloud credit
 
-You can also pay for your [Public Cloud](https://www.ovh.com/sg/public-cloud/instances/){.external} usage using cloud credit. Your first cloud credit purchase will cost £30. Any resources you use after this will consume your credit. When your credit is depleted, you can purchase more using any accepted payment method.
+You can also pay for your [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} usage using cloud credit. Your first cloud credit purchase will cost £30. Any resources you use after this will consume your credit. When your credit is depleted, you can purchase more using any accepted payment method.
 
 Cloud credit is non-transferable or refundable. It has no monetary value, and if it is not used within 13 months it will be lost.
 

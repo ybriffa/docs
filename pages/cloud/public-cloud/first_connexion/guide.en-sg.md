@@ -3,10 +3,10 @@ title: 'Logging in to an OVH Public Cloud instance'
 slug: first-login
 legacy_guide_number: 1787
 excerpt: 'This guide will explain how to log in to your OVH Public Cloud instances using Windows and Linux'
-section: 'Getting started'
+section: Quick start
 ---
 
-**Last updated 5th October 2018**
+**Last updated 2nd October 2018**
 
 ## Objective
 
@@ -16,8 +16,8 @@ Logging in to your OVH Public Cloud instances is similar to a standard login for
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
-* an [OVH Public Cloud instance](https://www.ovh.com/sg/public-cloud/instances/){.external} created in your account
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* an [OVH Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external} created in your account
 
 ## Instructions
 
@@ -74,7 +74,7 @@ To log in to a Linux instance using Windows, you can use a software program like
 
 #### Finalise the installation
 
-Once you have created your instance, you will need to finalise something called *sysprep*. To do this, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and launch the VNC console:
+Once you have created your instance, you will need to finalise something called *sysprep*. To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and launch the VNC console:
 
 ![VNC console](images/vnc_console.png)
 
@@ -87,6 +87,7 @@ You will then need to choose the *administrator* password:
 ![Choose password in sysprep](images/sysprep_password.png)
 
 Lastly, confirm the changes you have made by clicking `Finish`{.action}. The instance will reboot, and you can then log in to your Windows server.
+
 
 #### Logging in to Windows
 

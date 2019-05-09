@@ -1,16 +1,16 @@
 ---
-title: 'Transfer an instance backup from one datacentre to another'
+title: 'Transfer an Instance backup from one datacentre to another'
 slug: transfer_instance_backup_from_one_datacentre_to_another
-excerpt: 'This guide will show you how to transfer an instance backup from one datacentre to another while preserving the configuration and state of the instance'
+excerpt: 'This guide will show you how to transfer an Instance backup from one datacentre to another while preserving the configuration and state of the Instance'
 legacy_guide_number: g1853
-section: 'Resource management'
+section: API reference/CLI
 ---
 
-**Last updated 1st April 2019**
+**Last updated 29th March 2019**
 
 ## Objective
 
-A situation may arise where you need to move your [Public Cloud Instance](https://www.ovh.com/sg/public-cloud/instances/){.external} from one datacentre to another, either because you would prefer to move to a newly available datacentre or because you want to migrate from OVH Labs to Public Cloud. 
+A situation may arise where you need to move your [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external} from one datacentre to another, either because you would prefer to move to a newly available datacentre or because you want to migrate from OVH Labs to Public Cloud. 
 
 **This guide will show you how to transfer an Instance backup from one datacentre to another while preserving the configuration and state of the Instance.**
 
@@ -18,11 +18,11 @@ A situation may arise where you need to move your [Public Cloud Instance](https:
 
 Before following these steps, it's recommended that you first complete this guide:
 
-* [Prepare the environment to use the OpenStack API](https://docs.ovh.com/sg/en/public-cloud/prepare-environment-for-using-openstack-api/){.external}
+* [Prepare the environment to use the OpenStack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.external}
 
 You will also need the following:
 
-* a [Public Cloud Instance](https://www.ovh.com/sg/public-cloud/instances/){.external} in your OVH account
+* a [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external} in your OVH account
 * administrative (root) access to your datacentre via SSH
 
 > [!primary]

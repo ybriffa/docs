@@ -1,10 +1,9 @@
 ---
-title: Prepare the environment for using the OpenStack API
-excerpt: Prepare the environment for using the OpenStack API
-slug: prepare-environment-for-using-openstack-api
-section: Getting started
+title: 'Prepare the environment for using the OpenStack API'
+excerpt: 'Prepare the environment for using the OpenStack API'
+slug: prepare_the_environment_for_using_the_openstack_api
+section: API reference/CLI
 ---
-
 
 ## 
 In order to manage your Public Cloud services from a terminal, you can install OpenStack clients with Python.
@@ -60,19 +59,17 @@ admin@vps187763:~$ glance help
 
 - [Become root](https://docs.ovh.com/gb/en/public-cloud/become_root_and_select_a_password/)
 
-- Update repositories:
-
-```
-root@vps187763:~# apt-get update
-```
-
-
 - Install rpm rdo-release:
 
 ```
 [root@vps187769 ~]# yum install -y https://rdoproject.org/repos/rdo-release.rpm
 ```
 
+- Update repositories:
+
+```
+root@vps187763:~# yum update
+```
 
 - Install nova
 

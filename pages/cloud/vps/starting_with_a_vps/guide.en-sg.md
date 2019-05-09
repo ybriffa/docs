@@ -6,7 +6,7 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 18/04/2018**
+**Last updated 18th April 2018**
  
 ## Objective
 
@@ -23,13 +23,13 @@ A virtual private server (VPS) is a virtualised dedicated server. Unlike web hos
 
 ## Requirements
 
-- You need to have reserved your VPS on the [OVH website](https://www.ovh.com/sg/vps/){.external}.
+- You need to have reserved your VPS on the [OVH website](https://www.ovh.co.uk/vps/){.external}.
 - You need to have received the email with your access ID after the installation (validated during your order).
 
 
 ## Instructions
 
-Once you have logged in to your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, you simply need to read the information about your VPS, go to the `Cloud`{.action} section, then to `Servers`{.action} in the left-hand column. In this section, you will see everything about your VPS: general information in the middle, the operations you can perform listed as buttons on the right-hand side of the screen, and options at the very bottom.
+Once you have logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, you simply need to read the information about your VPS, go to the `Cloud`{.action} section, then to `Servers`{.action} in the left-hand column. In this section, you will see everything about your VPS: general information in the middle, the operations you can perform listed as buttons on the right-hand side of the screen, and options at the very bottom.
 
 ### Logging in to a VPS
 
@@ -77,7 +77,7 @@ A progress bar will appear in your Control Panel, for the reinstallation - pleas
 
 As explained in the “Objective” section of this guide, you are the administrator of your VPS. As such, you are responsible for your data and its security.
 
-Please refer to the guide on [Securing a VPS](https://docs.ovh.com/sg/en/vps/tips-for-securing-a-vps/){.external} if you wish to get some basic tips.
+Please refer to the guide on [Securing a VPS](https://docs.ovh.com/gb/en/vps/tips-for-securing-a-vps/) if you wish to get some basic tips.
 
 
 ### Securing a domain with an SSL certificate
@@ -86,11 +86,10 @@ Once you have installed and secured your VPS, you may want to secure your domain
 
 You can install this SSL certificate yourself manually, directly on the VPS. Please refer to the official documentation that you have been using.
 
+For a more automated process, OVH also offers the [SSL Gateway](https://www.ovh.co.uk/ssl-gateway/). For more information, please refer to the [product page](https://www.ovh.co.uk/ssl-gateway/){.external} or [guide documents](https://docs.ovh.com/gb/en/ssl-gateway/){.external} on this solution.
+
 ## Go further
 
-[Introduction to SSH](https://docs.ovh.com/sg/en/dedicated/ssh-introduction/){.external}
-
-[Securing a VPS](https://docs.ovh.com/sg/en/vps/tips-for-securing-a-vps/){.external}
-
+[Introduction to SSH](https://docs.ovh.com/gb/en/dedicated/ssh-introduction/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -5,7 +5,7 @@ excerpt: 'This guide explains how to add failover IPs to your configuration'
 section: 'Network Management'
 ---
 
-**Last updated 25th September 2018**
+**Last updated 4th September 2018**
 
 ## Objective
 
@@ -15,8 +15,8 @@ IP aliasing is a special network configuration for your OVH servers, which allow
 
 ## Requirements
 
-* a [Virtual Private Server](https://www.ovh.com/sg/vps/){.external}
-* [a failover IP address](https://www.ovh.com/sg/dedicated-servers/ip_failover.xml){.external} or a failover IP block (RIPE)
+* a [Virtual Private Server](https://www.ovh.co.uk/vps/){.external}
+* a failover IP address or a failover IP block (RIPE)
 * administrative (root) access to the server via SSH
 
 ## Instructions

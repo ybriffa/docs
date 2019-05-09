@@ -5,17 +5,17 @@ excerpt: Learn how to change the root password of a VPS
 section: Diagnostic and rescue mode
 ---
 
-**Last updated 27/06/2018**
+**Last updated 27th June 2018**
 
 ## Objective
 
-When you install or reinstall a distribution or operating system, you are provided with a root access password. We strongly recommend that you change it, as detailed in our guide on [securing a VPS](https://docs.ovh.com/sg/en/vps/tips-for-securing-a-vps/){.external}. You may also find that you have lost this password, and need to change it. This guide will take you through both scenarios.
+When you install or reinstall a distribution or operating system, you are provided with a root access password. We strongly recommend that you change it, as detailed in our guide on [securing a VPS](https://docs.ovh.com/gb/en/vps/tips-for-securing-a-vps/). You may also find that you have lost this password, and need to change it. This guide will take you through both scenarios.
 Learn how to change the root password of a VPS.
 
 ## Requirements
 
 - You must be connected via SSH to your VPS (root access).
-- [Reboot your VPS in rescue mode](https://docs.ovh.com/sg/en/vps/rescue/){.external}.
+- [Reboot your VPS in rescue mode](https://docs.ovh.com/gb/en/vps/rescue/).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -108,8 +108,7 @@ Finally, reboot your VPS on its drive via your OVH Control Panel.
 
 ## Go further
 
-[Introduction to SSH](https://docs.ovh.com/sg/en/dedicated/ssh-introduction/){.external}.
-
-[Activating rescue mode on VPS](https://docs.ovh.com/sg/en/vps/rescue/){.external}.
+[Introduction to SSH](https://docs.ovh.com/gb/en/dedicated/ssh-introduction/)
+[Activating rescue mode on VPS](https://docs.ovh.com/gb/en/vps/rescue/)
 
 Join our user community on <https://community.ovh.com/en/>.

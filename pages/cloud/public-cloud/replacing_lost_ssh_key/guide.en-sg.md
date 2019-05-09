@@ -3,10 +3,10 @@ title: 'Replacing your lost SSH key pair'
 slug: replacing_your_lost_ssh_key_pair
 excerpt: 'This guide explains how to configure the authorized_keys file for the admin user, so that you can add a new SSH key to regain access to your instance'
 legacy_guide_number: g2069
-section: Troubleshooting
+section: Knowledge Base
 ---
 
-**Last updated 5th October 2018**
+**Last updated 27th September 2018**
 
 ## Objective
 
@@ -64,6 +64,7 @@ First, change the root directory so that it is placed directly on the instance's
 >
 In the example below, we have used **vdb1** as the name of the server's disk and **mnt** as the mount point.
 >
+
 
 ```
 root@instance:/home/admin# mount /dev/vdb1 /mnt/

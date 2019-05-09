@@ -5,7 +5,7 @@ slug: use-kvm-for-vps
 section: Getting started
 ---
 
-**Last updated 31/01/2018**
+**Last updated 18th April 2018**
 
 ## Objective
 
@@ -15,7 +15,7 @@ The KVM console allows you to connect directly to your VPS without the need to u
 
 ## Requirements
 
-- You must be logged in to your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
 ## Instructions
 
@@ -61,4 +61,6 @@ If problems arise with the KVM, here is the recommended API for accessing the KV
 
 ## Go further
 
-Join our community of users on <https://www.ovh.com/community/en/>.
+Join our community of users on <https://community.ovh.com/en/>.
+
+
