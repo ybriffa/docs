@@ -5,7 +5,7 @@ excerpt: Learn more about the NSX interface
 section: Getting started
 ---
 
-**Last updated 01/02/2018**
+**Last updated 27th December 2017**
 
 ## Objective
 

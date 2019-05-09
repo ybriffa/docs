@@ -4,15 +4,15 @@ slug: install-cuda-serveur-gpu
 section: Server Management
 ---
 
-**Last updated 14/12/2017**
+**Last updated 14th December 2017**
 
 ## Objective
 
 You can install Compute Unified Device Architecture (CUDA) on a GPU server, but it requires a series of actions which we will explain to you in this guide.
 
-## Requirements:
+## Requirements
 
-- You must own a [GPU server](https://www.ovh.com/asia/dedicated-servers/gpu/){.external}.
+- You must own a [GPU server](https://www.ovh.co.uk/dedicated_servers/gpu/).
 - You must be logged into your server via SSH
 
 ## Instructions

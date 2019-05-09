@@ -5,7 +5,7 @@ excerpt: Learn how to configure an IP address on a virtual machine
 section: Getting started
 ---
 
-**Last updated 01/02/2018**
+**Last updated 03rd January 2018**
 
 ## Objective
 

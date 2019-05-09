@@ -2,20 +2,20 @@
 title: Deploying an infrastructure with variables and formatted outputs using OpenStack Heat (BETA)
 slug: deploy-infrastructure-with-variables-and-formatted-outputs-openstack-heat
 excerpt: Find out how to process environment variables using the modularity of Heat templates
-section: Orchestration with OpenStack Heat
+section: Tutorials
 ---
 
 **Last updated June 20th 2018**
 
 ## Objective
 
-We recommend starting off by reading our guide on [Deploying a basic infrastructure with OpenStack Heat](https://docs.ovh.com/asia/en/public-cloud/deploy-infrastructure-with-openstack-heat/){.external}, which covers how to use Heat for creating and manipulating simple *stacks*. In this guide, we will go a step further by using parameters in these *stacks*.
+We recommend starting off by reading our guide on [Deploying a basic infrastructure with OpenStack Heat](https://docs.ovh.com/gb/en/public-cloud/deploy-infrastructure-with-openstack-heat/){.external}, which covers how to use Heat for creating and manipulating simple *stacks*. In this guide, we will go a step further by using parameters in these *stacks*.
 
 **Find out how to format the output, so that you can use this information on the resources you have deployed.**
 
 ## Requirements
 
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 - a Public Cloud project
 - an OpenStack user account
 - how to manipulate YAML files

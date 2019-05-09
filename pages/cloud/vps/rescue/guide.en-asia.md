@@ -1,11 +1,11 @@
 ---
 title: Activating Rescue Mode on VPS
 slug: rescue
-excerpt: This guide will show you how to reboot your VPS in rescue mode.
+excerpt: This guide will show you how to reboot your VPS in rescue mode
 section: Diagnostic and rescue mode
 ---
 
-**Last updated 18th April 2018**
+**Last updated 17th April 2018**
 
 ## Objective
 
@@ -22,12 +22,12 @@ This guide will show you how to reboot your VPS in rescue mode.
 
 ## Requirements
 
-- You must be logged in to your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
 
 ## Instructions
 
-Once you have logged in to your Control Panel, go to the `Cloud`{.action} section, then to `Server`{.action} in the left-hand column. Choose your VPS in the left-hand column:
+Once you have logged in to your Control Panel, go to the `Cloud`{.action} section, then to `Servers`{.action} in the left-hand column. Choose your VPS in the left-hand column:
 
 ![VPS area in the Control Panel](images/vps_rescue1.png){.thumbnail}
 
@@ -49,6 +49,6 @@ You can now connect via SSH to your VPS in rescue mode. Once these changes have 
 
 ## Go further
 
-[Introduction to SSH](https://docs.ovh.com/asia/en/dedicated/ssh-introduction/){.external}
+[Introduction to SSH](https://docs.ovh.com/gb/en/dedicated/ssh-introduction/)
 
 Join our user community on <https://community.ovh.com/en/>.

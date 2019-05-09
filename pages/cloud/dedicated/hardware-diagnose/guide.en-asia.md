@@ -1,11 +1,11 @@
 ---
-title: Hardware Diagnostics
+title: 'Hardware diagnostics'
 slug: hardware-diagnostics
-excerpt: This guide will show you how to diagnose hardware issues on your server.
-section: Security
+excerpt: 'This guide will show you how to diagnose hardware issues on your server.'
+section: 'Diagnostic and rescue mode'
 ---
 
-**Last updated 21st June 2018**
+**Last updated 07th June 2018**
 
 ## Objective
 
@@ -16,29 +16,15 @@ At some point during the life of your server, you may encounter a fault due to a
 
 ## Requirements
 
-* a [Dedicated Server](https://www.ovh.com/asia/dedicated-servers/){.external}
-* [rescue mode activated](https://docs.ovh.com/asia/en/dedicated/ovh-rescue/){.external}
+* a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
+* [rescue mode activated](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}
 
 
 ## Instructions
 
-### Activate rescue mode
-
-You can activate rescue mode by logging into your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and going to your server's page. Then go to `Server Status`{.action} > `General information`{.action} > `Boot`{.action} and click the `Edit`{.action} button to change the boot mode.
-
-![General Information](images/rescue-mode-01.png){.thumbnail}
-
-On the next screen, select `Boot on rescue mode`{.action}. If your server has a Linux-based OS, select `rescue64-pro`{.action} from the dropdown list. If you have a Windows server, select `WinRescue`{.action}. Lastly, type your email address in the text field, then click `Next`{.action}.
-
-![Change the Netboot](images/rescue-mode-03.png){.thumbnail}
-
-Confirm your options on the next screen, and then reboot your server to apply your changes. Your server will now reboot in rescue mode, and you will receive the credentials for logging in via the email address you provided. To exit rescue mode, simply change the boot mode back to `Boot on the hard disk`{.action}, then reboot your server.
-
-![Reboot the server](images/rescue-mode-02.png){.thumbnail}
-
 ### Use the web interface
 
-Once your server has rebooted, you'll receive an email with your rescue mode access credentials. The email will also contain a link to the rescue mode web interface. The link usually looks like this: <https://your_servers_ip_address:444>.
+Once your server has rebooted, you'll receive an email with your rescue mode access credentials. This email will contain a link to the rescue mode web interface. The link usually looks like this: *https://your_servers_ip_address:444*.
 
 After clicking the link, you be taken to the web interface, as shown below.
 
@@ -54,10 +40,10 @@ From the top of the web interface, you can click the `Start all tests`{.action} 
 
 The web interface allows you to run separate tests for:
 
-- Processors
-- Network connection
-- Memory
-- Disk partitions
+* Processors
+* Network connection
+* Memory
+* Disk partitions
 
 You will also be able to view your server's SMART logs, which give you detailed hard disk information.
 
@@ -85,12 +71,12 @@ To start the test, click the button as shown below.
 
 #### Disk Partitions
 
-The partitions test is comprised of a disk access test and a file system check. The disk access test checks if the system can communicate with your server's hard drives. The file system check uses the `fsck -fy` command to check the entire file system.
-
 > [!warning]
 >
 > Running a file system check on a damaged hard drive can result in data loss.
 >
+
+The partitions test is comprised of a disk access test and a file system check. The disk access test checks if the system can communicate with your server's hard drives. The file system check uses the `fsck -fy` command to check the entire file system.
 
 ![Disk test](images/partitions.png){.thumbnail}
 

@@ -1,23 +1,23 @@
 ---
-title: Creating a secondary DNS on a Dedicated Server
+title: 'Adding a domain to secondary DNS on a Dedicated Server'
 slug: secondary-dns
-excerpt: This guide will show you how to create a secondary DNS and add it to your Dedicated Server
-section: Network Management
+excerpt: 'This guide will show you how to add a domain to secondary DNS of your Dedicated Server'
+section: 'Network Management'
 ---
 
-**Last updated 21st June 2018**
+**Last updated 13th June 2018**
 
 ## Objective
 
-If you want to use your [Dedicated Server](https://www.ovh.com/asia/dedicated-servers/){.external} as the primary DNS for your domain, you can add the domain as a secondary DNS to your server.
+If you want to use your [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external} as the primary DNS for your domain, you can add the domain as a secondary DNS to your server.
 
 **This guide will show you how to create a secondary DNS, and add it to your Dedicated Server.**
 
 ## Requirements
 
-* a [Dedicated Server](https://www.ovh.com/asia/dedicated-servers/){.external} with Windows installed
-* a domain name
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external} with any OS installed
+* a [domain](https://www.ovh.co.uk/domains/){.external} in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 
 ## Instructions
@@ -42,8 +42,25 @@ You will now see a message instructing you to create a TXT record for your domai
 
 ### Verify your domain
 
-Now that you have the details for domain verification, please log into your account with your domain registrar and and create a TXT record with the details in the last step.
+Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Web`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
 
+![Domain verification](images/domain-verification-01.png){.thumbnail}
+
+After selecting your domain, click the `Add an entry`{.action} button:
+
+![Domain verification](images/domain-verification-02.png){.thumbnail}
+
+Next, select the `TXT`{.action} record type, then click `Next`{.action} to continue:
+
+![Domain verification](images/domain-verification-03.png){.thumbnail}
+
+Now fill in the `Sub-domain` and `Value` fields using the information you noted down earlier. When you have done this, click `Next`{.action}:
+
+![Domain verification](images/domain-verification-04.png){.thumbnail}
+
+Finally, confirm your entry by clicking the `Confirm`{.action} button:
+
+![Domain verification](images/domain-verification-05.png){.thumbnail}
 
 ### Add the secondary DNS to your server
 

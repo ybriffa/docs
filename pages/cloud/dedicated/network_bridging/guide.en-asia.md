@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to use network bridging to configure inte
 section: 'Network Management'
 ---
 
-**Last updated 24th September 2018**
+**Last updated 4th March 2019**
 
 ## Objective
 
@@ -18,8 +18,8 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 ## Requirements
 
 * a Dedicated Server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
-* at least one [failover IP](https://www.ovh.com/asia/dedicated-servers/ip_failover.xml) address attached to the server
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* at least one [failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml) address attached to the server
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
@@ -31,7 +31,7 @@ For this example, we will use the following values in our code samples, which sh
 
 ### Assign a virtual MAC address
 
-Log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
+Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
 
 ![Failover IP](images/virtual_mac_01.png){.thumbnail}
 
@@ -54,6 +54,11 @@ Your gateway address would therefore be:
 * 123.456.789.254
 
 ### Apply the configuration
+
+> [!primary]
+>
+For all operating systems and distributions, you **MUST** configure you virtual machine with the virtual MAC address you created in the Control Panel.
+>
 
 #### Debian and Debian-based operating systems (Ubuntu, CrunchBang, SteamOS, etc.)
 

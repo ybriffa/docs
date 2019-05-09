@@ -2,35 +2,36 @@
 title: 'Create an instance in your OVH customer account'
 slug: create_an_instance_in_your_ovh_customer_account
 excerpt: 'This guide will show you how to create an instance in your Public Cloud account.'
-section: 'Getting started'
+legacy_guide_number: g1775
+section: Quick start
 ---
 
-**Last updated 25th October 2018**
+**Last updated 21st September 2018**
 
 ## Objective
 
-The [Public Cloud](https://www.ovh.com/asia/public-cloud/instances/){.external} lets you create instances (i.e. virtual servers) quickly and easily, in just a few clicks.
+The [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} lets you create instances (i.e. virtual servers) quickly and easily, in just a few clicks.
 
 **This guide will show you how to create an instance in your Public Cloud account.**
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
-* a [Public Cloud](https://www.ovh.com/asia/public-cloud/instances/){.external} project created in your OVH account
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} project created in your OVH account
 * an SSH key created in your OVH customer account
 
 ## Intructions
 
 > [!primary]
 >
-> The rest of this guide assumes that you have set the view of your cloud project to `Infrastructure`{.action}. You can change the view with the toggle switch on the right-hand side of the page, as shown below:
+The rest of this guide assumes that you have set the view of your cloud project to `Infrastructure`{.action}. You can change the view with the toggle switch on the right-hand side of the page, as shown below:
 >
 
 ![view](images/pci-instance-view-01.png){.thumbnail}
 
 ### Add an instance
 
-First, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `Cloud`{.action} menu.
+First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Cloud`{.action} menu.
 
 ![cloud menu](images/pci-instance-cloud-01.png){.thumbnail}
 
@@ -66,8 +67,9 @@ These settings allow you to configure:
 
 > [!primary]
 >
-> Please note that for Windows servers, authentication is password based, so SSH keys are not used at all.
+Please note that for Windows servers, authentication is password based, so SSH keys are not used at all.
 >
+
 
 When you have configured the options you want, decide whether you want the instance to be billed hourly or monthly and toggle the billing switch accordingly.
 
@@ -89,9 +91,11 @@ The newly-created instance will now be visible in your account.
 
 > [!warning]
 >
-> When you create an instance and choose to pay monthly, you must keep this instance for at least until the end of the current month.
+When you create an instance and choose to pay monthly, you must keep this instance for at least until the end of the current month.
 >
 
 ## Go further
+
+[Getting started with Public Cloud](https://docs.ovh.com/gb/en/public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

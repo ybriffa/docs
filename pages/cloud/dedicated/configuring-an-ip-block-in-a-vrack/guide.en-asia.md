@@ -1,36 +1,36 @@
 ---
-title: Configuring an IP block in a vRack
+title: 'Configuring an IP block in a vRack'
 slug: ip-block-vrack
-excerpt: This guide will show you how to configure a block of public IP addresses for use with the vRack.
-section: Network Management
+excerpt: 'This guide will show you how to configure a block of public IP addresses for use with the vRack.'
+section: 'Network Management'
 ---
 
-**Last updated 2018/08/24**
+**Last updated 29th June 2018**
 
 ## Objective
 
-As well as private IP addressing, the [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} also allows you to route public IP traffic through your server's [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} port using a public IP address block.
+As well as private IP addressing, the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} also allows you to route public IP traffic through your server's [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} port using a public IP address block.
 
-**This guide will show you how to configure a block of public IP addresses for use with the vRack.**
+**This guide will show you how to configure a block of public IP addresses for use with the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external}.**
 
 ## Requirements
 
 * a public block of IP addresses in your account, with a minimum of four addresses
 * your chosen private IP address range
-* a [vRack compatible server](https://www.ovh.com/asia/dedicated-servers/){.external}
-* a [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} service activated in your account
-* access to the OVH [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* a [vRack compatible server](https://www.ovh.co.uk/dedicated_servers/){.external}
+* a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
+* access to the OVH [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 > [!primary]
 >
-For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the vRack.
+For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external}.
 >
 
 ### Configure a usable IP address
 
-For vRack purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first useable address is the second address in the block, as shown below:
+For [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first useable address is the second address in the block, as shown below:
 
 ```sh
 46.105.135.96   Reserved: Network address
@@ -51,7 +51,7 @@ For vRack purposes, the first, penultimate, and last addresses in any given IP b
 46.105.135.111  Reserved: Network broadcast
 ```
 
-To configure the first usable IP address, we need to edit the network configuration file, as shown below. In this example, we need to use a subnet mask of **255.255.255.240**.
+To configure the first usable IP address, we need to edit the network configuration file, as shown below. In this example, we need to use a subnet mask of *255.255.255.240*.
 
 > [!primary]
 >
@@ -78,7 +78,7 @@ Establish an SSH connection to your server and run the following command from th
 # apt-get install iproute2
 ```
 
-Next, we need to create a new IP route for the vRack. We'll be adding a new traffic rule by amending the file, as shown below:
+Next, we need to create a new IP route for the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external}. We'll be adding a new traffic rule by amending the file, as shown below:
 
 ```sh
 /etc/iproute2/rt_tables
@@ -105,7 +105,7 @@ For example purposes, the network configuration file we refer to is located in /
 >
 
 
-Finally, we need to amend the network configuration file to account for the new traffic rule and route the vRack traffic through the network gateway address of **46.105.135.110**.
+Finally, we need to amend the network configuration file to account for the new traffic rule and route the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} traffic through the network gateway address of **46.105.135.110**.
 
 ```sh
 /etc/network/interfaces
@@ -125,10 +125,10 @@ Now reboot your server to apply the changes.
 
 ## Go further
 
-[Configuring the vRack on your dedicated servers](https://docs.ovh.com/asia/en/dedicated/configuring-vrack-on-dedicated-servers/){.external}
+[Configuring the vRack on your dedicated servers](https://docs.ovh.com/gb/en/dedicated/configuring-vrack-on-dedicated-servers/){.external}
 
-[Creating multiple vLANs in a vRack](https://docs.ovh.com/asia/en/dedicated/multiple-vlans/){.external}
+[Creating multiple vLANs in a vRack](https://docs.ovh.com/gb/en/dedicated/multiple-vlans/){.external}
 
-[Configuring the vRack between the Public Cloud and a Dedicated Server](https://docs.ovh.com/asia/en/dedicated/vrack-pci-ds/){.external}
+[Configuring the vRack between the Public Cloud and a Dedicated Server](https://docs.ovh.com/gb/en/dedicated/vrack-pci-ds/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.
