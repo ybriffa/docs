@@ -16,8 +16,8 @@ Afin d'activer la  **QoS**  par défaut, veuillez suivre le guide suivant : [Act
 
 
 ## Customisation de la QoS
-Il est possible de marquer certains paquets (en **CSx** ) pour les inclure dans une priorité spécifique. Ainsi vous pourrez garantir une qualité de service optimale pour  **une application choisie** .
-
+Il existe plusieurs niveaux (**Normal**, **Low priority**, **High priority** et **Latency - VoIP**) afin de marquer certains paquets pour les inclure dans une priorité spécifique. Ainsi vous pourrez garantir une qualité de service optimale pour  **une application choisie** .
+A titre d'information, la classe **Normal** est le niveau de priorisation le plus bas et la classe **Latency - VoIP** est le niveau de priorisation le plus élevé. Par défaut, **Latency - VoIP** est utilisé pour prioriser la VoIP OVHCloud.
 
 
 > [!alert]
