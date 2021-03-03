@@ -1,50 +1,48 @@
 ---
-title: Outgoing .co.uk domain name transfer
-excerpt: Outgoing .co.uk domain name transfer
-slug: outgoing_couk_domain_name_transfer
+title: Transferring .co.uk domain name to another registrar
+excerpt: Transferring .co.uk domain name to another registrar
+slug: transferring_couk_domain_name_to_another_registrar
 section: Transfer
 order: 5
 ---
 
 
-## Prerequisites
-To transfer a .co.uk domain name or equivalent to another registrar, make sure that it meets the following conditions:
+## Objective
+
+Domain transfer refers to the process of moving a registered domain name from one registrar to another. For example, if you have ordered a domain name on our website, OVHcloud is its current registrar. An outgoing domain transfer needs to be initiated by changing **TAG** for the domain. 
+
+This guide reffer to transfer all .uk domains: .co.uk, .gov.uk, .me.uk., etc.
+
+This guide explains how to prepare your domain name for an outgoing transfer.
+
+## Requirements
+
+- a [domain name](https://www.ovh.co.uk/domains/) registered with OVHcloud
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) with the necessary permissions to manage the domain name (domain administrator)
+- domain name must not be under ongoing disupute with Nominet
 
 
-- Your domain must not have expired. 
-- Your domain name must not be the subject of an ongoing dispute with Nominet
-- Your domain must not be blocked by OVH
+## Intructions
 
+### Step 1: Check your future registrar transfer TAG
 
+In order to transfer your domain to another registrar, you must first specify your future provider transfer TAG. You can contact your future provider directly to obtain this **TAG** which will be recommended, as you can also check transfer process with new provider as this may vary between different registrars.
 
+The list of TAGs for the different registrars is also available on the official [Nominet](http://www.nominet.uk/registrar-list){.external} registry website.
 
-## Extensions in question
+[Nominet](LINK){.external}
 
-- .co.uk
-- .me.uk
-- .org.uk
-- .ltd.uk
-- .plc.uk
-- .uk.
+### Step 2: Change your domain TAG
 
+Log in to your [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and go to `Web Cloud`{.action} in the top navigation bar. Click `Domains`{.action} and chose your domains from the list. 
 
+On the `General information`{.action} tab you can find the "Protection against domain name transfer" slider button under **Security**, set to `Not available`{.action} by default.
 
-
-## Step 1: Verify domain name information
-You can find the information in your control panel [here](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). 
-You must log in as the administrative contact.
-
-
-- Once you are logged in, you just have to click on your domain name at the top-left of the Domains section, then on General information.
-
-
-
-![](images/img_4266.jpg){.thumbnail}
-
-
-## Step 2: Change your domain TAG
-
-- Then click on "Outgoing transfer Tag".
+>[!primary]
+>
+> For .uk domains there is no "Protection against domain name transfer" - you only need to change **TAG** for the domain to transfer domain out. 
+>
+> START UPDATE HERE
 
 
 
