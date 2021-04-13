@@ -24,7 +24,7 @@ OVHcloud Public Cloud services are HDS-certified for certain activities listed i
 > The Managed Private Registry and Big Data Cluster (Hadoop) services are not currently within the HDS certification scope.
 >
 
-**Find out how to enable the option for hosting healthcare data in your Public Cloud project**
+**Find out how to enable the option for hosting healthcare data in your Public Cloud project.**
 
 ## Requirements
 
@@ -45,13 +45,13 @@ You will then have access to the specific conditions related to hosting healthca
 
 ### Enabling HDS on an existing Public Cloud project
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), select the Public Cloud project for which you want services to be HDS-certified.
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), select the Public Cloud project for which you want services to be HDS-certified.
 
 Click `Settings`{.action}. If you are subscribed to the Business or Enterprise level of support, you can then tick the `Hosting health data and HDS certification for this project` box.
 
 You will then have access to the specific conditions related to hosting healthcare data.
 
-Review the terms and conditions and check the “Accept Contracts box”. Finally, click `Update`{.action} to finish taking HDS certification into account for your project, in accordance with the contractual conditions.
+Review the terms and conditions and check the "Accept Contracts" box. Finally, click `Update`{.action} to finish taking HDS certification into account for your project, in accordance with the contractual conditions.
 
 ![activate HDS existing project](images/hds-current-project.png){.thumbnail}
 
