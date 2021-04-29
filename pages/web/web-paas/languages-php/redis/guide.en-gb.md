@@ -4,7 +4,7 @@ slug: redis
 section: Php
 ---
 
-**Last updated 31st March 2021**
+**Last updated 29th April 2021**
 
 
 

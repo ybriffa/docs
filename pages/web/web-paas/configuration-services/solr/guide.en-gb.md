@@ -4,7 +4,7 @@ slug: solr
 section: Services
 ---
 
-**Last updated 26th March 2021**
+**Last updated 29th April 2021**
 
 
 
