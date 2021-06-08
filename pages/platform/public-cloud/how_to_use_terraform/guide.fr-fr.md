@@ -1,95 +1,99 @@
 ---
-title: Comment utiliser Terraform sur le Public Cloud OVH ?
+title: Comment utiliser Terraform sur le Public Cloud OVHcloud ?
 slug: utiliser-terraform
 description: Utilisation de Terraform
 keywords: infrastructure, instance, cloud, creation
-excerpt: Documentation pas à pas sur l'utilisation de l'outil Terraform pour abstraire le déploiement de votre infrastructure
+excerpt: Décrouvez comment utiliser l'outil Terraform pour abstraire le déploiement de votre infrastructure
 section: Tutoriels
 ---
 
 
-## Préambule
-OpenStack est un système d'exploitation de cloud open source pour créer des instances publiques. OpenStack est proposé dans le produit [Public Cloud OVH](https://www.ovh.com/fr/public-cloud/instances/){.external}. Terraform, également open source, est un outil développé dans l'esprit de créer facilement de complexes infrastructures dans le Cloud. Il abstrait de nombreux concepts, donne un moyen de décrire une infrastructure dans un fichier texte et de déployer cette infrastructure grâce à ce fichier. Dans ce guide, nous vous expliquerons comment utiliser Terraform sur le Public Cloud OVH.
+## Objectif
 
+OpenStack est un système d'exploitation de cloud open source pour créer des instances publiques. OpenStack est proposé dans le produit [Public Cloud OVHcloud](https://www.ovh.com/fr/public-cloud/instances/){.external}.
+<br>Terraform, également open source, est un outil développé dans l'esprit de créer facilement de complexes infrastructures dans le Cloud. Il abstrait de nombreux concepts, donne un moyen de décrire une infrastructure dans un fichier texte et de déployer cette infrastructure grâce à ce fichier.
 
-### Prérequis
-- [Un utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/){.external}
-- [Les variables d'environnement OpenStack](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/){.external}
-- [Vos identifiants API et clés d'autorisations OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}
-- [Une clé SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/){.external}
-- [L'exécutable Terraform](https://www.terraform.io/intro/getting-started/install.html){.external}
-- [Les clients OpenStack (nova, glance)](https://github.com/openstack/python-openstackclient){.external}
+**Découvrez comment utiliser Terraform sur le Public Cloud OVHcloud.**
 
+## Prérequis
 
+* [Créer un utilisateur OpenStack](../creation-et-suppression-dun-utilisateur-openstack/){.external}
+* [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
+* [Disposer de vos identifiants API et clés d'autorisations OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/)
+* [Créer une clé SSH](../creation-des-cles-ssh/)
+* [Installer l'exécutable Terraform](https://www.terraform.io/intro/getting-started/install.html){.external}
+* [Installer les clients OpenStack (nova, glance)](https://github.com/openstack/python-openstackclient){.external}
 
 > [!primary]
 >
-> Ce tutorial a été fait avec la version suivante : Terraform v0.9.11
-> 
+> Ce tutorial a été réalisé avec la version suivante : Terraform v0.9.11
+>
 
+## En pratique
 
-## Creer un environement Terraform
-Après l'installation de Terraform, vous allez créer un dossier dans lequel nous allons mettre tous les fichiers texte qui vont décrire votre infrastructure. Créez un dossier test_terraform et dirigez vous dedans :
+### Creer un environement Terraform
 
-
-```sh
-1. $ mkdir test_terraform && cd test_terraform
-```
-
-Maintenant vous allez créer un environnement Terraform. Grâce à celui-ci, Terraform va pouvoir créer et gérer l'évolution de votre infrastructure. La ligne de commande suivante va créer un nouvel environnement Terraform :
-
+Après l'installation de Terraform, il vous faut créer un dossier dans lequel vous placerez tous les fichiers texte qui vont décrire votre infrastructure.
+<br>Créez un dossier `test_terraform` et dirigez vous dedans :
 
 ```sh
-1. $ terraform env new test_terraform
+$ mkdir test_terraform && cd test_terraform
 ```
 
-/!\ Notes : Dans les dernières versions de Terraform, la commande `terraform env` est dépréciée, `terraform workspace` est maintenant le terme utilisé pour créer ce que les anciennes versions de Terraform appelaient, un "environnement".
+Vous allez à présent créer un environnement Terraform. Grâce à celui-ci, Terraform va pouvoir créer et gérer l'évolution de votre infrastructure.
+<br>La ligne de commande suivante va créer un nouvel environnement Terraform :
 
+```sh
+$ terraform env new test_terraform
+```
 
-## Creer des ressources
+> [!primary]
+>
+> Dans les dernières versions de Terraform, la commande `terraform env` est dépréciée. Le terme `terraform workspace` est maintenant utilisé pour créer ce que les anciennes versions de Terraform appelaient un "environnement".
+>
 
-### Definir un fournisseur
-Un fournisseur, comme OVH, vous donne un environnement pour créer et développer des applications. Dans Terraform, un fournisseur est le point d'entrée de votre environnement de déploiement.
+### Creer des ressources
+
+#### Definir un fournisseur
+
+Un fournisseur, comme OVHcloud, vous donne un environnement pour créer et développer des applications. Dans Terraform, un fournisseur est le point d'entrée de votre environnement de déploiement.
 
 Dans un fichier provider.tf, ajoutez les lignes suivantes :
 
-
 ```python
-1. # Configure le fournisseur OpenStack hébergé par OVH
-2. provider "openstack" {
-3.   auth_url = "https://auth.cloud.ovh.net/v3" # URL d'authentification
-4.   domain_name = "default" # Nom de domaine - Toujours à "default" pour OVH
-5.   alias = "ovh" # Un alias
-6. }
+# Configure le fournisseur OpenStack hébergé par OVHcloud
+provider "openstack" {
+  auth_url = "https://auth.cloud.ovh.net/v3" # URL d'authentification
+  domain_name = "default" # Nom de domaine - Toujours à "default" pour OVHcloud
+  alias = "ovhcloud" # Un alias
+}
 ```
 
-Un alias est un unique identifiant pour un type de fournisseur. Il permt de gérer des resources (instance, ect.) provenant de différents fournisseurs. Dans le code précédent on pourra donc appeler ce fournisseur grâce à ce nom: openstack.ovh
+Un **alias** est un identifiant unique pour un type de fournisseur. Il permet de gérer des ressources (instance, etc.) provenant de différents fournisseurs. Dans le code précédent, on pourra donc appeler ce fournisseur grâce à ce nom: openstack.ovhcloud
 
+#### Creer une machine virtuelle
 
-### Creer une machine virtuelle
 Dans Terraform, une ressource est un composant de votre infrastructure. Cela peut être une machine virtuelle, un bloc de stockage, un réseau, etc.
 
 Pour créer une machine virtuelle simple, vous avez besoin de 4 éléments :
 
-- Un nom de machine virtuelle (libre)
-- Une clé SSH
-- Un nom d'image proposée par le fournisseur
-- Un type de machine (flavor)
+* Un nom de machine virtuelle (libre)
+* Une clé SSH
+* Un nom d'image proposée par le fournisseur
+* Un type de machine (flavor)
 
-Pour lister les différents types de machine disponibles sur l'offre Public Cloud d'OVH, vous pouvez entrer la commande suivante :
-
+Pour lister les différents types de machines disponibles sur l'offre Public Cloud OVHcloud, vous pouvez entrer la commande suivante :
 
 ```sh
-1. $ nova flavor-list
+$ nova flavor-list
 ```
 
 Dans cette liste, nous décidons de prendre le type "s1-2" ("vps-ssd-1" si vous disposez de l'ancien catalogue).
 
 Pour lister les différentes images disponibles, vous pouvez entrer la commande suivante :
 
-
 ```sh
-1. $ glance image-list
+$ glance image-list
 ```
 
 Dans cette liste, nous décidons de prendre l'image "Ubuntu 16.04".
