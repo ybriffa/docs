@@ -11,6 +11,8 @@ order: 2
 
 Vous avez supprimé par erreur un ou plusieurs éléments (mail, contact, rendez-vous du calendrier) et vous avez vidé votre corbeille. Il est possible de les retrouver pendant 14 jours après leur suppression avec l’option Récupérer les éléments supprimés.
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Prérequis
 
 Disposer d'une [offre e-mail OVHcloud](https://www.ovh.com/fr/emails/){.external} compatible avec OWA.
@@ -39,10 +41,6 @@ La récupération des éléments supprimés peut être effectuée depuis le webm
 > ce cas des éléments peuvent être supprimés définitivement sans être placé
 > dans la récupération des éléments supprimés.
 > 
-
-## Depuis le webmail (OWA)
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Exchange 2010
 Le lien d'accès au webmail Exchange 2010 est différent selon le serveur sur le quel votre compte est installé.
@@ -144,3 +142,7 @@ Une pop-up s’ouvre afin de choisir les éléments à restaurer.
 Une fois la restauration terminée, vous retrouvez les éléments dans la corbeille et pouvez les gérer à nouveau.
 
 ![emails](images/3610.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
