@@ -6,7 +6,13 @@ section: 'Diagnostics and troubleshooting'
 order: 5
 ---
 
-**Last updated 11/06/2021**
+**Last updated 27/07/2021**
+
+> [!warning]
+>
+> This guide is deprecated, the OVHcloud Insight offer used in this guide is plannned to close on 2021/10/26.
+> More information on <http://travaux.ovh.net/?do=details&id=51756&>.
+>
 
 ## Objective
 
@@ -66,7 +72,7 @@ Url: https://warp10.insight.eu.metrics.ovh.net
 
 7\. Click on the Grafana icon in the top left and choose from the menu: `Dashboard`{.action}, then `Import`{.action}
 
-8\. Upload the following template: [internet-access-grafana-dashboard-v2.json](http://files.isp.ovh.net/grafana/internet-access-grafana-dashboard-v2.json)
+8\. Upload the following template: [internet-access-grafana-dashboard-v3.json](http://files.isp.ovh.net/grafana/internet-access-grafana-dashboard-v3.json)
 
 9\. Click `Import`{.action} to finish adding the template.
 

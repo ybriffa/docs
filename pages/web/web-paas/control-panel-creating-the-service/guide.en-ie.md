@@ -6,13 +6,15 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 28th May 2021**
+**Last updated 20th July 2021**
 
 ## Objective
 
 OVHcloud Web PaaS powered by Platform.sh enables web developers to manage, develop and deploy applications by offering a centralised collaborative solution with numerous integrated features.
 
 **This guide explains how to order and preconfigure your Web PaaS solution in the OVHcloud Control Panel.**
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EcEBhxuDCDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requirements
 
@@ -46,7 +48,7 @@ You can upgrade or downgrade the project later in the Control Panel. Note that a
 Choose the geographical region of the data centre in which your project will be hosted.
 
 ![project details](images/creation_manager03.png){.thumbnail}
- 
+
 #### Step 4: Select the project type
 
 - If the project relies on your own pre-existing code, you will be able to import it: click on `Create your template`{.action} and continue with `Next`{.action}.
@@ -74,24 +76,47 @@ Finally, review the order summary and click on `Create a project`{.action} to co
 
 After the payment process is completed, the project will be deployed and you will be able to log in to the Management Console from the OVHcloud Control Panel.
 
-### Step 7: Check the deployment of your project in the Management Console
+#### Step 7: Check the availability of your project for build and deploy
 
-On your project's `General information` page, click on `Access project`{.action} in the **Management interface** section. 
+On your project's `General information` page, click on `Access my Web PaaS project`{.action}.
+
+![OVHcloud control panel](images/control_panel01.png){.thumbnail}
+
+You will be redirected to the `OVERVIEW` tab of the Web PaaS Management Console.
+
+Here you can follow the configuration wizard to guide you through the first steps with your project. Click `Start`{.action} to follow all the steps. Alternatively, you can directly select one of the wizard steps on the right.
 
 ![console project](images/manage_console01.png){.thumbnail}
 
-You will be redirected to the `OVERVIEW` tab of the Web PaaS Management Console. Here you can follow the configuration wizard to guide you through the first steps with your project. The project is ready when the status is set to `Active` on the Master environment.
+The project is ready when the status is set to `Active` on the Master environment.
 
 ![console project](images/manage_console02.png){.thumbnail}
 
-The "Go further" section below contains links to some useful guides for the next steps.
+### Getting started with a Web PaaS project
+
+#### Configuring the CLI
+
+The first step with an active project is usually to install the Web PaaS CLI in your local working environment. Download the Web PaaS CLI by copying the **_curl_ command provided in the Wizard** into your local Terminal application.
+
+The Web PaaS CLI installer will provide further instructions and provide a **URL to be opened in your web browser**. This is necessary to grant access to your user account. (You might be prompted to log in with your OVHcloud credentials at this point). Click on the button `Yes, authorize`{.action} to finish the CLI configuration.
+
+#### Configuring SSH keys
+
+The next step is to add SSH keys to your user account.
+
+- If you would like to use an existing local key, enter the command `webpaas ssh-key:add` in the Web PaaS CLI. Your public key can be added in the Wizard or in the `Account`{.action} settings of your Web PaaS Management Console.
+- If you need to create a new key pair, we recommend to follow the steps in the [SSH guide](../development-ssh/).
+
+#### Downloading the project
+
+The final step to get started with a project is to downlad it in order to work on it locally. Simply enter `webpaas get` in your Web PaaS CLI and you will be able to select it from the list of your projects.
 
 
 ## Go further
 
-[Using SSH](../development-ssh/)
-
 [Configuring the CLI](../development-cli/)
+
+[Using SSH](../development-ssh/)
 
 [Using YAML](../configuration-yaml/)
 

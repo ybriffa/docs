@@ -6,11 +6,17 @@ section: 'Diagnostic et dépannage'
 order: 5
 ---
 
+> [!warning]
+>
+> Ce guide est déprécié et concerne l'utilisation de l'offre OVHcloud Insight dont la fermeture est prévue pour le 26/10/2021.
+> Plus d'informations sur <http://travaux.ovh.net/?do=details&id=51756&>.
+>
+
 > [!primary]
 > Une version en langue anglaise de ce guide est disponible [ici](https://docs.ovh.com/gb/en/xdsl/build-your-own-monitoring-solution/)
 >
 
-**Dernière mise à jour le 11/06/2021**
+**Dernière mise à jour le 27/07/2021**
 
 ## Objectif
 
@@ -70,7 +76,7 @@ Url  : https://warp10.insight.eu.metrics.ovh.net
 
 7\. Cliquez sur l'icône Grafana en haut à gauche et choisissez dans le menu : `Dashboard`{.action}, puis `Import`{.action}
 
-8\. Uploadez le template suivant : [internet-access-grafana-dashboard-v2.json](http://files.isp.ovh.net/grafana/internet-access-grafana-dashboard-v2.json)
+8\. Uploadez le template suivant : [internet-access-grafana-dashboard-v3.json](http://files.isp.ovh.net/grafana/internet-access-grafana-dashboard-v3.json)
 
 9\. Cliquez sur `Import`{.action} pour finaliser l'ajout du template.
 

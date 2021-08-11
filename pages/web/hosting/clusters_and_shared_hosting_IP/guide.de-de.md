@@ -949,13 +949,45 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 51.178.146.199
 ```
 
+## Cluster 031
+
+#### IP-Adressen der Cluster nach Land
+
+|Country|Country Code|IPv4|IPv6|
+|---|---|----|---|
+|Frankreich|FR|146.59.209.152|2001:41d0:301::31|
+|Irland|IE|188.165.5.107|2001:41d0:301:3::31|
+|Portugal|PT|51.178.229.47|2001:41d0:301:2::31|
+|Vereinigtes-Uni|UK|178.32.52.177|2001:41d0:301:12::31|
+|Italien|IT|94.23.66.84|2001:41d0:301:11::31|
+|Spanien|ES|51.255.26.63|2001:41d0:301:4::31|
+|Polen|PL|87.98.236.253|2001:41d0:301:5::31|
+|Tschechische tchèque|CZ|217.182.52.81|2001:41d0:301:6::31|
+|Niederlande-Bas|NL|213.32.108.83|2001:41d0:301:7::31|
+|Finnland|FI|178.32.10.72|2001:41d0:301:8::31|
+|Litauen|LT|188.165.30.182|2001:41d0:301:9::31|
+|Deutschland|DE|151.80.4.219|2001:41d0:301:1::31|
+|Belgien|BE|217.182.187.17|2001:41d0:301:10::31|
+
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.31
+```
+
+Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
+
+```bash
+141.94.87.67
+```
+
 ## Cluster 051
 
 #### IP-Adressen der Cluster nach Land
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
-|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+|Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
 
 Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
@@ -981,6 +1013,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 
 [Website mit SSL-Zertifikat auf HTTPS umstellen](../website-umstellen-https-ssl)
 
-[Optimierung der Performance Ihrer Webseite](../webhosting_optimierung_der_performance_ihrer_webseite)
+[Optimierung der Performance Ihrer Website](../webhosting_optimierung_der_performance_ihrer_webseite)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

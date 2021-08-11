@@ -1,12 +1,12 @@
 ---
-title: Data Processing Capabilities and Limitations 
+title: Data Processing Capabilities and Limitations
 slug: capabilities
 excerpt: Find out what are the current capabilities and limitations of the OVHcloud Data Processing Platform 
 section: Concepts
 order: 1
 ---
 
-**Last updated 4<sup>th</sup> December, 2020**
+**Last updated 14<sup>th</sup> July, 2021**
 
 
 ## Objective 
@@ -26,8 +26,9 @@ It is not possible to interact with Apache Spark cluster via command line.
 
 ### The Apache Spark job in Data Processing is limited to: 
 
-- Minimum 1 and maximum 60 GB of RAM per Executor
-- Minimum 1 and maximum 16 Cores of CPU per Executor 
+- Minimum 1 and maximum 60 GB of RAM per Executor/Driver (including the memory overhead)
+- Minimum 1 and maximum 16 Cores of CPU per Executor/Driver
+- Minimum 8 GiB and maximum 143 GiB of local storage per Executor/Driver. This resource can't be directly configured though, for each node, you will have 9 GiB of local storage per core, minus 1 GiB used by system. (eg. If your executors have 4 cores each, they will have 26 GiB of local storage each)
 - Minimum 1 and maximum 10 Executor nodes
 
 ### Supported languages for Apache Spark code
@@ -66,6 +67,13 @@ It is not possible to interact with Apache Spark cluster via command line.
 
 - Before submitting a job, you will need to upload your job into your OVHcloud Object Storage account. 
 - To process data, your data can be stored in OVHcloud Object Storage or any other cloud storage or connected storage that is accessible through public internet.
+
+>[!warning]
+>
+> The OVHcloud Object Storage isn't consistent.
+> 
+> So beware when you are using it as your data storage, mainly for temporary storage or to store checkpoints for Spark Streaming. Those may not be usable as the OVHcloud Object Storage is only eventually consistent.
+>
 
 ### Resources quotas 
 

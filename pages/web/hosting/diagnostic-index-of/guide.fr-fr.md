@@ -1,36 +1,12 @@
 ---
-<<<<<<< HEAD
-title: Résoudre l'erreur « Index of »
-excerpt: Découvrez comment identifier et résoudre la page d’erreur « Index of »
-=======
-title: "Que faire en cas de page « Index of » ?"
-excerpt: "Découvrez comment remettre votre site en ligne quand il affiche une page « Index of »"
->>>>>>> 5d93af162b75ef08cb45b175a6786267b793b7e2
+title: Que faire en cas de page « Index of » ?
+excerpt: Découvrez comment remettre votre site en ligne quand il affiche une page « Index of »
 slug: diagnostic-index-of
 section: Diagnostic
 order: 5
 ---
 
-<<<<<<< HEAD
-**Dernière mise à jour le 04/06/2021**
- 
-## Objectif
- 
-**Découvez comment...**
- 
-## Prérequis
- 
-## En pratique
- 
-### Étape 1
- 
-### Étape 2
- 
-## Aller plus loin
- 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
-=======
-**Dernière mise à jour le 23/06/2021**
+**Dernière mise à jour le 25/06/2021**
 
 ## Objectif
 
@@ -56,7 +32,7 @@ Lorsqu’une configuration `Multisite` n’est pas correctement paramétrée, vo
 
 ### Comprendre l'origine de la page « Index of »
 
-Votre nom de domaine est connecté via la partie `Multisite` de votre hébergement à un répertoire (un « Dossier racine ») sur votre serveur [FTP](../connexion-espace-stockage-ftp-hebergement-web/).
+Votre nom de domaine est connecté via la partie `Multisite` de votre hébergement à un répertoire (un « `Dossier racine` ») sur votre serveur [FTP](../connexion-espace-stockage-ftp-hebergement-web/).
 
 La page **Index of** indique que le répertoire concerné ne contient pas de fichier **index.php** ou **index.html**. Un fichier de ce type constitue le « point d'entrée » de votre site.
 
@@ -82,7 +58,7 @@ Cochez la case `Modifier également le sous domaine www.mydomain.ovh` et indique
 
 > [!primary]
 >
-> Utiliser le répertoire `www` comme `Dossier racine` n'est en aucun cas obligatoire. Vous pouvez installer votre site dans un autre dossier de votre serveur FTP.
+> Utiliser le répertoire `www` comme `Dossier racine` n'est en aucun cas obligatoire. Vous pouvez installer votre site dans un autre dossier de votre [serveur FTP](../connexion-espace-stockage-ftp-hebergement-web/).
 
 Cliquez ensuite sur `Suivant`.
 
@@ -107,4 +83,3 @@ Vous obtiendrez le résultat suivant :
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous invitons à consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
->>>>>>> 5d93af162b75ef08cb45b175a6786267b793b7e2
