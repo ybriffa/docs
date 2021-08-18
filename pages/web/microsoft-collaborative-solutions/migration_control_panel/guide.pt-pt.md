@@ -18,6 +18,12 @@ A OVHcloud oferece várias soluções de e-mail: MX Plan (vendido isoladamente o
 
 **Saiba como migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange.**
 
+> [!warning]
+>
+> [OVH Mail Migrator](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange-migracao-de-contas-email-ovh-mail-migrator/) permite migrar as suas mensagens de um servidor de e-mail para outro.</br>
+> Se os seus e-mails só são registados localmente (configuração em POP ou arquivo local), pode efetuar uma [exportação a partir do seu software de correio](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/) e depois [importar o seu ficheiro PST via OMM](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange-migracao-de-contas-email-ovh-mail-migrator/#importar-um-ficheiro-pst_1) ou [importar diretamente a partir do seu software de mensagens](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/).
+>
+
 ## Requisitos
 
 - Ter um endereço de e-mail MX Plan (através da oferta MX Plan ou incluída numa oferta de [alojamento web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external}).
